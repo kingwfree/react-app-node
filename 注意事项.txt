@@ -19,3 +19,5 @@ npm i jquery ->yarn add jquery
 	src 源码
 	README.md   如何运行命令
 	yarn.lock 通过yarn下载项目依赖更快，因为.lock文件记录着依赖的版本及详细地址
+
+npm run build  项目写好后进行打包编译
