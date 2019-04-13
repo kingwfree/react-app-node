@@ -1,14 +1,18 @@
-全局安装脚手架 cnpm i -g create-react-app
+安装完 Node 后建议设置 npm 镜像以加速后面的过程（或使用科学上网工具）
+npm config set registry https://registry.npm.taobao.org --global
+npm config set disturl https://npm.taobao.org/dist --global
+
+全局安装脚手架 npm i -g create-react-app
 
 名字不能大写 create-react-app myapp
 
 官方推荐 yarn 
 
-cnpm i -g yarn
+npm i -g yarn
 
-cnpm start / yarn start
+npm start / yarn start
 
-cnpm i jquery ->yarn add jquery
+npm i jquery ->yarn add jquery
 
 目录结构
 	public 项目模板 ReactDOM.render()渲染到模板的指定#root节点
