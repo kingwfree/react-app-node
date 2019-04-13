@@ -1,0 +1,17 @@
+全局安装脚手架 cnpm i -g create-react-app
+
+名字不能大写 create-react-app myapp
+
+官方推荐 yarn 
+
+cnpm i -g yarn
+
+cnpm start / yarn start
+
+cnpm i jquery ->yarn add jquery
+
+目录结构
+	public 项目模板 ReactDOM.render()渲染到模板的指定#root节点
+	src 源码
+	README.md   如何运行命令
+	yarn.lock 通过yarn下载项目依赖更快，因为.lock文件记录着依赖的版本及详细地址
