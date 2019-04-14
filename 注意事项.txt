@@ -21,3 +21,27 @@ npm i jquery ->yarn add jquery
 	yarn.lock 通过yarn下载项目依赖更快，因为.lock文件记录着依赖的版本及详细地址
 
 npm run build  项目写好后进行打包编译
+
+react-router-dom 
+	提供了BrowserRouter,Router,Link等api 动态的
+	可以通过DOM事件控制路由
+react-router
+	静态的
+	提供了Router,Route,Switch等,但是它没有提供dom操作进行跳转的api
+	
+	Route
+		控制路径对应显示的组件
+		标签属性有exact path component
+			exact 严格匹配 一旦匹配到就不会继续往下匹配
+			path 标识路由的路径
+			component 路径对应显示的组件
+	Link和NavLink
+
+    		两者都是可以控制路由跳转的
+
+    		NavLink的api更多
+
+    		Link标签有to属性
+        		to可以接受string或者一个object，来控制url
+
+    		NavLink它可以为当前选中的路由设置类名、样式以及回调函数等
