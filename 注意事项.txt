@@ -22,6 +22,9 @@ npm i jquery ->yarn add jquery
 
 npm run build  项目写好后进行打包编译
 
+npm i -S react-router-dom
+npm i -S url
+
 react-router-dom 
 	提供了BrowserRouter,Router,Link等api 动态的
 	可以通过DOM事件控制路由
@@ -32,7 +35,7 @@ react-router
 	Route
 		控制路径对应显示的组件
 		标签属性有exact path component
-			exact 严格匹配 一旦匹配到就不会继续往下匹配
+			exact 严格匹配 只匹配符合的
 			path 标识路由的路径
 			component 路径对应显示的组件
 	Link和NavLink

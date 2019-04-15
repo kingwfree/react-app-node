@@ -1,0 +1,19 @@
+.news{
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    width: 100px;
+    height:calc(100vh - 70px);
+    border-right:1px solid #000;
+}
+.list ul li{
+    line-height: 40px;
+    text-align: center;
+}
+.info{
+    width:calc(100vw - 110px)
+}
+.news .list .on{
+    color:red;
+}

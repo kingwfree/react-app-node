@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+}
+.topNav{
+    height: 60px;
+}
+.topNav ul{
+    display: flex;
+    justify-content: space-between;
+    background:skyblue;
+}
+.topNav ul li{
+    line-height: 60px;
+    font-size: 20px;
+    color:#fff;
+    text-align: center;
+}
+.on{
+    color:yellow;
+}
