@@ -1,12 +1,25 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import {add,remove,removeAsync} from './static/redux/redux'
+import Abc from "./Abc";
+// const mapStateToProps=(state)=>{
+//   return {
+//     xyz:state
+//   }
+// }
+
+// const mapDispatchToProps={add,remove,removeAsync}
+
+// App = connect(mapStateToProps,mapDispatchToProps)(App);
+
+@connect(state=>({xyz:state}),{add,remove,removeAsync})
 
 class App extends Component {
   render() {
     //const {add,remove,removeAsync,dispatch} = this.props;
     return (
       <div className="App">
+        <Abc/>
         <p>{this.props.xyz}</p>
         <button
           onClick = {()=>{
@@ -34,14 +47,5 @@ class App extends Component {
   }
 }
 
-const mapStateToProps=(state)=>{
-  return {
-    xyz:state
-  }
-}
-
-const mapDispatchToProps={add,remove,removeAsync}
-
-App = connect(mapStateToProps,mapDispatchToProps)(App);
 
 export default App;
