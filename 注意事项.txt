@@ -48,3 +48,14 @@ react-router
         		to可以接受string或者一个object，来控制url
 
     		NavLink它可以为当前选中的路由设置类名、样式以及回调函数等
+
+npm i -S redux
+npm i -S redux-thunk
+
+非侵入式
+Redux DevTools
+
+侵入式
+Redux DevTools
+npm i --save-dev redux-devtools-extension
+
