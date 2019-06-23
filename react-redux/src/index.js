@@ -13,12 +13,15 @@ import thunk from "redux-thunk";
 //Provider 负责数据处理 （容器）
 //<Provider/>组件，能够使你的整个app访问到Redux store中的数据
 import { Provider } from "react-redux";
-import { createStore,applyMiddleware } from "redux"
+import { createStore,applyMiddleware,compose } from "redux"
 import {reducer} from './static/redux/redux'
-//const devToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION__?window.__REDUX_DEVTOOLS_EXTENSION__():()=>{}
+const devToolsExtension = window.devToolsExtension?window.devToolsExtension():()=>{};
 const store = createStore(
     reducer,
-    applyMiddleware(thunk)
+    compose(
+        applyMiddleware(thunk),
+        devToolsExtension
+    )
 )
 
 ReactDOM.render(
